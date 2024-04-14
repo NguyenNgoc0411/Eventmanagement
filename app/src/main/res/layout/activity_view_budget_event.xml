@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreateBudgetEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/main_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_west_24_white" />
+
+        <TextView
+            android:id="@+id/textView_budget_event"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/paytone_one"
+            android:gravity="center"
+            android:text="NGÂN SÁCH SỰ KIỆN"
+            android:textColor="@color/blue_button"
+            android:textSize="25dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_white_dots"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="642dp"
+        android:padding="@dimen/padsize12"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="107dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_text_view"
+            android:gravity="center"
+            android:text="Tên sự kiện"
+            android:textColor="@color/blue_button"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="202dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Sự kiện ra mắt phim Ehuma"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.409"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView_Budget"
+            android:layout_width="107dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_text_view"
+            android:gravity="center"
+            android:text="Ngân sách"
+            android:textColor="@color/blue_button"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+
+            android:layout_width="203dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:text="25.000.000"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TableLayout
+            android:id="@+id/tableListItemBudget"
+            android:layout_width="344dp"
+            android:layout_height="295dp"
+            android:layout_marginBottom="192dp"
+            android:background="@drawable/custom_edit_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="@dimen/padsize12"
+
+                >
+
+
+                <Button
+                    android:id="@+id/buttonnhahang"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_checkbox"
+
+                    app:backgroundTint="@null"
+                    />
+
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nhà hàng"
+                    android:textColor="@color/blue_button"
+                    android:textSize="16dp" />
+
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_marginTop="30dp"
+                    android:indeterminate="false"
+                    android:indeterminateDuration="5000"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/custom_progress_1"
+                    android:progressTint="@color/green_progress" />
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="@dimen/padsize12"
+
+                >
+
+                <Button
+                    android:id="@+id/button_1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_checkbox"
+
+                    app:backgroundTint="@null"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trang trí"
+                    android:textColor="@color/blue_button"
+                    android:textSize="16dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar_2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="300dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="-70dp"
+                    android:layout_marginTop="30dp"
+                    android:indeterminate="false"
+                    android:indeterminateDuration="5000"
+                    android:progress="20"
+                    android:progressDrawable="@drawable/custom_progress_2" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+
+            android:id="@+id/textView_KhaDung"
+            android:layout_width="124dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_button_add"
+            android:gravity="center"
+            android:text="Khả dụng"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableListItemBudget" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="120dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="28dp"
+            android:text="25.000.000"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_KhaDung" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

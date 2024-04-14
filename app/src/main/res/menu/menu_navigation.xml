@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item android:id="@+id/home_navi" android:title="Home"  android:icon="@drawable/icons8_home"></item>
+    <item android:id="@+id/setting_navi" android:title="Setting" android:icon="@drawable/setting_150"></item>
+    <item android:id="@+id/list_navi" android:title="List" android:icon="@drawable/icons8_list"></item>
+    <item android:id="@+id/personal_navi" android:title="Home" android:icon="@drawable/icons8_person"></item>
+
+
+
+
+</menu>

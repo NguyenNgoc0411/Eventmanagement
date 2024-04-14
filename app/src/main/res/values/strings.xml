@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="firstname">Họ</string>
+    <string name="lastname">Tên</string>
+    <string name="phone">Số điện thoại</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="relypassword">Nhắc lại mật khẩu</string>
+    <string name="eventName">Tên sự kiện</string>
+    <string name="time">Ngày giờ</string>
+    <string name="address">Số nhà, đường </string>
+    <string name="setHour">Chọn giờ</string>
+    <string name="setDate">Ngày</string>
+    <string name="street">Số nhà, đường </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="budget">Ngân sách dự kiến</string>
+    <string name="login">Đăng nhập</string>
+
+</resources>

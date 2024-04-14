@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:id="@+id/bottom_sheet_update"
+    android:background="@color/background"
+    android:padding="30dp">
+
+    <EditText
+        android:id="@+id/editBudget_NCC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:hint="Mô tả nhà cung cấp"
+        android:inputType="text"
+        android:padding="@dimen/padsize12"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/editBudget_Bonus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập phí bổ sung"
+        android:inputType="text"
+        android:padding="@dimen/padsize12"
+        android:textColorHint="@color/gray"
+        />
+    <EditText
+        android:id="@+id/editBudget_Describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:hint="Ghi chú"
+        android:inputType="text"
+        android:padding="@dimen/padsize12"
+        android:textColorHint="@color/gray"
+        />
+
+    <Button
+        android:id="@+id/button_update"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/custom_button_add"
+
+        android:text="Cập nhật"
+        android:textSize="20dp" />
+
+</LinearLayout>

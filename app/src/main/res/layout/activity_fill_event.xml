@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_blue"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Activity.RegisterActivity"
+    >
+
+
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_Back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:background="@color/main_blue"
+
+                android:drawableEnd="@drawable/baseline_west_24"
+
+                android:textColor="@color/black"
+                android:text="Back"
+                android:textSize="18dp"
+                app:backgroundTint="@null"
+                />
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="425dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+
+                android:rotationX="-4"
+                android:rotationY="-2"
+                android:src="@drawable/logo" />
+
+        </TableRow>
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/custom_edit_text"
+        android:ems="10"
+        android:hint="@string/eventName"
+        android:inputType="text"
+
+        android:padding="@dimen/padsize12"
+        android:textColorHint="@color/gray" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+            <Button
+                android:id="@+id/button_setHour"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_edit_text"
+
+                android:drawableEnd="@drawable/time_40"
+
+                android:hint="@string/setHour"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:backgroundTint="@null"
+                android:onClick="setTimePicker"
+                />
+
+
+            <Button
+                android:id="@+id/button_setDate"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:hint="@string/setDate"
+                android:textColor="@color/gray"
+
+                android:textSize="15dp"
+
+
+                app:backgroundTint="@null"
+                android:onClick="setDateEvent"
+                android:background="@drawable/custom_edit_text"
+
+                android:drawableEnd="@drawable/icon_date_30"/>
+
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="38dp">
+
+            <Button
+                android:id="@+id/button_setHour_end"
+                android:layout_width="170dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_edit_text"
+
+                android:drawableEnd="@drawable/time_40"
+
+                android:hint="@string/setHour"
+                android:textColor="@color/gray"
+                android:textSize="16dp"
+                app:backgroundTint="@null"
+                android:onClick="setTimeEndPicker"
+                />
+
+
+            <Button
+                android:id="@+id/button_setDate_end"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:hint="@string/setDate"
+                android:textColor="@color/gray"
+
+                android:textSize="15dp"
+
+
+                app:backgroundTint="@null"
+                android:onClick="setDateEndEvent"
+                android:background="@drawable/custom_edit_text"
+
+                android:drawableEnd="@drawable/icon_date_30"/>
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.Material3.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/editTextStreet"
+
+                    android:layout_width="349dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/custom_edit_text"
+                    android:ems="10"
+                    android:text="Địa điểm tổ chức"
+                    android:inputType="text"
+                    android:completionThreshold="1"
+
+                    android:padding="@dimen/padsize12"
+                    android:textColorHint="@color/gray"
+                    android:textColor="@color/gray"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableRow>
+    </TableLayout>
+
+
+    <EditText
+        android:id="@+id/editTextDescribe"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="textMultiLine"
+        android:gravity="top|start"
+        android:background="@drawable/describe"
+        android:ems="10"
+        android:hint="Mô tả"
+
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/padsize12"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/button_createEvent"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="TẠO SỰ KIỆN"
+        android:textSize="20dp"
+
+        app:backgroundTint="@null" />
+
+
+
+
+</LinearLayout>

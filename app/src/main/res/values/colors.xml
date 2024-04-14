@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#FBF7F7</color>
+    <color name="main_blue">#B3DBE3</color>
+    <color name="gray">	#808080</color>
+    <color name="gray_task">#686767</color>
+    <color name="blue_button">#004AAD</color>
+    <color name="purple">#9A673AB7</color>
+    <color name="task">#F6F3F3</color>
+    <color name="gray_backgroud">#F2F2F2</color>
+    <color name="red_delete">#EB0D21</color>
+    <color name="green_progress">#5AD45F</color>
+    //hue
+    <color name="color_button_to_do_list1">#f2f2f2</color>
+    <color name="color_background">#b3dbe3</color>
+    <color name="color_login">#00bf63</color>
+</resources>

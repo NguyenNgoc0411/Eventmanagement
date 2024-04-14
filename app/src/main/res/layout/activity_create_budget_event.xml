@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CreateBudgetEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/main_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_west_24_white" />
+
+        <TextView
+            android:id="@+id/textView_Budget"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/paytone_one"
+            android:gravity="center"
+            android:text="NGÂN SÁCH SỰ KIỆN"
+            android:textColor="@color/blue_button"
+            android:textSize="25dp"
+           />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_white_dots"
+            android:id="@+id/showMenuBudget"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="413dp"
+        android:layout_height="642dp"
+        android:padding="@dimen/padsize12"
+        android:background="@color/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="107dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/blue_button"
+            android:background="@drawable/custom_text_view"
+            android:gravity="center"
+            android:text="Tên sự kiện"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_edit_text"
+
+            android:ems="10"
+            android:hint="@string/budget"
+            android:inputType="text"
+            android:padding="@dimen/padsize12"
+            android:textColorHint="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="20dp"
+            android:text="Sự kiện ra mắt phim Exhuma"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.404"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editBudgetItem_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_edit_text"
+
+            android:ems="10"
+            android:hint="Mục chi tiêu"
+            android:inputType="text"
+            android:padding="@dimen/padsize12"
+            android:textColorHint="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/editBudget" />
+
+        <EditText
+            android:id="@+id/editBudgetItem_2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="32dp"
+
+            android:background="@drawable/custom_edit_text"
+            android:ems="10"
+            android:hint="Chi phí dự kiến"
+            android:inputType="text"
+            android:padding="@dimen/padsize12"
+            android:textColorHint="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editBudgetItem_1" />
+
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/custom_button_add"
+            android:ems="10"
+
+            android:text="Thêm"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/editBudgetItem_2"
+            app:layout_constraintTop_toBottomOf="@+id/editBudgetItem_1" />
+
+
+        <TableLayout
+            android:id="@+id/tableListItemBudget"
+            android:layout_width="343dp"
+            android:layout_height="227dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/custom_edit_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.434"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editBudgetItem_2"
+            app:layout_constraintVertical_bias="0.127">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padsize12"
+
+                >
+
+                <TextView
+                    android:id="@+id/textView_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="Mục chi"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/textView_2"
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:text="Dự kiến"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padsize12"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="Nhà hàng"
+                    android:textSize="18dp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:text="5.000.000"
+                    android:textSize="18dp" />
+
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/custom_button_add"
+                    android:gravity="center"
+                    android:text="Sửa"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custome_delete_button"
+                    android:gravity="center"
+                    android:text="Xóa"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/button_createBudget"
+            android:layout_width="196dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_button_add"
+
+            android:ems="10"
+            android:text="Tạo ngân sách"
+            android:textSize="20dp"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableListItemBudget" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
